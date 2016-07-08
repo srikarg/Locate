@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByC512k8yUg2P04EkOVAVXqWQv0I9nPzQ"></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script type="text/javascript" src="/static/js/main.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="eight columns">
+        <div class="map-container">
+            <div id="map" style="height: 400px;"></div>
+        </div>
+    </div>
+    <div class="four columns">
+        <h3>Welcome to room {{ room }}, {{ user }}!</h3>
+        <ul class="room-members"></ul>
+        <a class="button button-primary" href="#" onclick="leave_room();">Leave this room</a>
+    </div>
+</div>
+{% endblock %}

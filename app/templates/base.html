@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if title %}
+    <title>{{ title }} | Locate</title>
+    {% else %}
+    <title>Locate</title>
+    {% endif %}
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/lib/normalize.css">
+    <link rel="stylesheet" href="/static/css/lib/skeleton.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+    <header class="site-header">
+        <h1><a href="/">Locate</a></h1>
+    </header>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Srikar Gudipati.</p>
+    </footer>
+</body>
+</html>
