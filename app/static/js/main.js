@@ -10,7 +10,7 @@ $(function() {
         socket.emit('left', {});
     });
 
-    socket = io.connect('https://' + document.domain + ':' + location.port);
+    socket = io();
 
     socket.on('connect', function() {
         socket.emit('joined', {});

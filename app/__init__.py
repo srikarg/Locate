@@ -14,6 +14,3 @@ rooms = {}
 
 from app import routes
 from app import events
-
-# if __name__ == '__main__':
-#     socketio.run(app, debug=False)

@@ -36,3 +36,7 @@ instance/
 
 venv/
 ENV/
+
+bin/
+include/
+pip-selfcheck.json
